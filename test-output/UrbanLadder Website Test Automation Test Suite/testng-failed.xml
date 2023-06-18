@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [UrbanLadder Website Test Automation Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="UrbanLadder Website Test Cases(failed)">
+    <classes>
+      <class name="qaTestCases.BookShelvesTest">
+        <methods>
+          <include name="displayDisplayBookShelvesTest"/>
+          <include name="close"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- qaTestCases.BookShelvesTest -->
+    </classes>
+  </test> <!-- UrbanLadder Website Test Cases(failed) -->
+</suite> <!-- Failed suite [UrbanLadder Website Test Automation Test Suite] -->

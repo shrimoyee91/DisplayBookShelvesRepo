@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="UrbanLadder Website Test Automation Test Suite">
+  <test thread-count="5" name="UrbanLadder Website Test Cases">
+	  <classes>
+		  <class name="qaTestCases.HomePageTest"></class>
+		  <class name="qaTestCases.BookShelvesTest"></class>
+		  <class name="qaTestCases.GiftCardPageTest"></class>
+	  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
