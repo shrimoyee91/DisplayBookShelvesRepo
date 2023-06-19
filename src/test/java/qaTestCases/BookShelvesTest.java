@@ -17,46 +17,46 @@ public class BookShelvesTest extends TestBase{
 	}
 	@BeforeClass
 	public void setUp() {
-		logger = report.createTest("Executing Test Cases");
+		logger = report.createTest("BookShelve Page Report");
 		initialization();
 		
 		shelvePage = new BookShelvepage();
-		reportPass("Browser is Invoked");
+		reportInfo("Browser is Invoked");
 	}
 	@Test(priority = -1)
 	public void validateHomepageTitleTest() {
 		shelvePage.validateHomePageTitle();
-		reportPass("Test Case Passed Successfully");
+		reportPass("UrbanLadder Home Page is opened successfully");
 	}
 	@Test(priority=0)
 	public void clickBookShelveIconTest() {
 		shelvePage.clickBookShelveIcon();
-		reportPass("Test Case Passed Successfully");
+		reportPass("UrbanLadder BookShelve Page is opened.");
 	}
 	@Test(priority = 1)
 	public void clickOnPopUpTest() {
 		shelvePage.clickOnPopUp();
-		reportPass("Test Case Passed Successfully");
+		reportInfo("PopUp is closed.");
 	}
 	@Test(priority = 2)
 	public void openStorageTest() {
 		shelvePage.openStorage();
-		reportPass("Test Case Passed Successfully");
+		reportPass("Open storage is clicked.");
 	}
 	@Test(priority = 3)
 	public void priceLimitTest() {
 		shelvePage.priceLimit();
-		reportPass("Test Case Passed Successfully");
+		reportPass("Price limit is set.");
 	}
 	@Test(priority = 4)
 	public void inStockTest() {
 		shelvePage.inStock();
-		reportPass("Test Case Passed Successfully");
+		reportPass("In stock is set.");
 	}
 	@Test(priority = 5)
 	public void displayDisplayBookShelvesTest() {
 		shelvePage.displayBookShelves();
-		reportPass("Test Case Passed Successfully");
+		reportPass("Bookshelves are displayed.");
 	}
 	@AfterClass
 	public void close() {

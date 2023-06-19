@@ -23,42 +23,42 @@ public class GiftCardPageTest extends TestBase{
 	}
 	@BeforeClass
 	public void setUp() {
-		logger = report.createTest("Executing Test Cases");
+		logger = report.createTest("GiftCard Page Report");
 		initialization();
 		
 		giftPage = new GiftCardPage();
-		reportPass("Browser is Invoked");
+		reportInfo("Browser is Invoked");
 	}
 	@Test(priority = -1)
 	public void vaateHomepageTitleTest() {
 		giftPage.validateHomePageTitle();
-		reportPass("Test Case Passed Successfully");
+		reportPass("UrbanLadder Home Page is opened.");
 	}
 	@Test(priority = 0)
 	public void giftCardIconTest() {
 		giftPage.clickOnGiftCard();
-		reportPass("Test Case Passed Successfully");
+		reportPass("GiftCard Link is clicked.");
 	}
 	@Test(priority = 1)
 	public void cardPageTitleTest() {
 		giftPage.validateCardPageTitle();
-		reportPass("Test Case Passed Successfully");
+		reportPass("UrbanLadder GiftCard Page is opened.");
 		
 	}
 	@Test(priority = 2)
 	public void chooseCardTest() {
 		giftPage.chooseCard();
-		reportPass("Test Case Passed Successfully");
+		reportPass("GiftCard is choosed.");
 	}
 	@Test(priority = 3)
 	public void sendAmountTest() {
 		giftPage.sendAmount("5000");
-		reportPass("Test Case Passed Successfully");
+		reportPass("Send Amount");
 	}
 	@Test(priority = 4)
 	public void clickNextTest() {
 		giftPage.clickNext();
-		reportPass("Test Case Passed Successfully");
+		reportPass("Next button is clicked.");
 	}
 	@DataProvider
 	public Object[][] giftCardRecTestData() {
@@ -69,7 +69,7 @@ public class GiftCardPageTest extends TestBase{
 	@Test(priority = 5, dataProvider = "giftCardRecTestData")
 	public void fillRecFormTest(String recName, String recEmail, String recMobile) {
 		giftPage.fillRecForm(recName,recEmail,recMobile);
-		reportPass("Test Case Passed Successfully");
+		reportPass("Recipient details is filled.");
 	}
 	@DataProvider
 	public Object[][] giftCardCusTestData() {
@@ -80,17 +80,17 @@ public class GiftCardPageTest extends TestBase{
 	@Test(priority = 6, dataProvider = "giftCardCusTestData")
 	public void fillCusFormTest(String cusName, String cusEmail, String cusMobile, String cusAddress, String cusPincode, String message) {
 		giftPage.fillCusForm(cusName,cusEmail,cusMobile, cusAddress, cusPincode, message);
-		reportPass("Test Case Passed Successfully");
+		reportPass("Customer details is filled.");
 	}
 	@Test(priority = 7)
 	public void clickOnConfirmTest() {
 		giftPage.clickConfirm();
-		reportPass("Test Case Passed Successfully");
+		reportPass("Confirm button is clicked.");
 	}
 	@Test(priority = 8)
 	public void takeScreenshotTest() {
 		giftPage.captureError();
-		reportPass("Test Case Passed Successfully");
+		reportPass("Error message is captured.");
 	}
 	@AfterClass
 	public void close() {

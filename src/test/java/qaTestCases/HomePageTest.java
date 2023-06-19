@@ -8,6 +8,8 @@ import org.testng.annotations.BeforeClass;
 //import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
+
 import qaBase.TestBase;
 import qaPages.BookShelvepage;
 //import qaPages.GiftCardPage;
@@ -21,30 +23,33 @@ public class HomePageTest extends TestBase {
 	}
 	@BeforeClass
 	public void setUp() {
-		logger = report.createTest("Executing Test Cases");
+		//logger = report.createTest("Executing Test Cases");
+		logger=report.createTest("Home Page Report");
 		initialization();
+		//logger.log(Status.INFO, "OPENING THE BROWSER");
 		
 		home = new HomePage();
-		reportPass("Browser is Invoked");
+		reportInfo("Browser is Invoked");
 		
 	}
 	@Test(priority = 0)
 	public void vaateHomepageTitleTest() {
 //		home.validateHomePageTitle();
-		String title = home.validateHomePageTitle();
-		String expTitle="Up to 70% off on Online Furniture | Full House Sale - Urban Ladder";
-		Assert.assertEquals(title, expTitle);
-		reportPass("Test Case Passed Successfully");
+		try {
+			String title = home.validateHomePageTitle();
+			String expTitle="Up to 70% off on Online Furniture | Full House Sale - Urban Ladder";
+			Assert.assertEquals(title, expTitle);
+			reportPass("WEBSITE OPPENED SUCCESSFULLY");
+		}
+		catch(Exception e) {
+			reportFail("urban ladder homepage is not opened");
+		}
 	}
 	@Test(priority = 1)
-	public void subMenuTest() {
-	try {
+	public void subMenuTest() throws InterruptedException {
+	
 		home.subMenu();
-	} catch (InterruptedException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
-	reportPass("Test Case Passed Successfully");
+		reportPass("All menus and Submenus are Obtained Successfully");
 	}
 //	@Test(priority = 1)
 //	public void clickOnBookShelveLinkTest() {
