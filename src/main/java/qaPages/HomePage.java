@@ -34,13 +34,13 @@ public class HomePage extends TestBase {
 			
 	}
 	public String validateHomePageTitle() {
-		logger = report.createTest("Home  Page is opening.");
+		
 		
 			String title=testUtil.webPageTitle();
 //			String expTitle="Up to 70% off on Online Furniture | Full House Sale - Urban Ladder";
 //			Assert.assertEquals(title, expTitle);
 			System.out.println(title);
-			reportInfo("UrbanLadder Home Page is opened.");
+			
 			
 		
 		return title;
@@ -49,9 +49,9 @@ public class HomePage extends TestBase {
 	public void subMenu() throws InterruptedException {
 		
 //		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-		logger = report.createTest("Obtain all menu and submenus in Collection.");
 		
-		try {
+		
+		
 			Actions action = new Actions(driver);
 			
 			action.moveToElement(storage).perform();
@@ -68,12 +68,7 @@ public class HomePage extends TestBase {
 				System.out.println(sMenu);
 				subMenuItem.add(sMenu);
 			}
-			reportPass("All menus and Submenus are Obtained Successfully");
-		
-		}
-		catch (Exception e) {
-			reportFail(e.getMessage());
-		}
+			
 	
 	}
 //	public BookShelvepage clickOnBookshelvePage() {

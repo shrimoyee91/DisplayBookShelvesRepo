@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\shrim\AppData\Local\Temp\testng-eclipse-280703867\testng-customsuite.xml</span>
+                    <span>C:\Users\shrim\AppData\Local\Temp\testng-eclipse-279639863\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods,   10 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="qaTestCases.HomePageTest" class="method navigator-link" hash-for-method="vaateHomepageTitleTest">vaateHomepageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,52 +118,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="qaTestCases.GiftCardPageTest" class="method navigator-link" hash-for-method="cardPageTitleTest">cardPageTitleTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="qaTestCases.GiftCardPageTest" class="method navigator-link" hash-for-method="chooseCardTest">chooseCardTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="qaTestCases.GiftCardPageTest" class="method navigator-link" hash-for-method="clickNextTest">clickNextTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="qaTestCases.GiftCardPageTest" class="method navigator-link" hash-for-method="clickOnConfirmTest">clickOnConfirmTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="qaTestCases.GiftCardPageTest" class="method navigator-link" hash-for-method="fillCusFormTest(Jay, bzy@abd, 7469254136, 46, MG Road, 700083, Happy BirthDay)">fillCusFormTest(Jay, bzy@abd, 7469254136, 46, MG Road, 700083, Happy BirthDay)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="qaTestCases.GiftCardPageTest" class="method navigator-link" hash-for-method="fillRecFormTest(Liza, abc@zyz, 84614563)">fillRecFormTest(Liza, abc@zyz, 84614563)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="qaTestCases.GiftCardPageTest" class="method navigator-link" hash-for-method="giftCardIconTest">giftCardIconTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="qaTestCases.GiftCardPageTest" class="method navigator-link" hash-for-method="sendAmountTest">sendAmountTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="qaTestCases.GiftCardPageTest" class="method navigator-link" hash-for-method="takeScreenshotTest">takeScreenshotTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="qaTestCases.GiftCardPageTest" class="method navigator-link" hash-for-method="vaateHomepageTitleTest">vaateHomepageTitleTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="qaTestCases.HomePageTest" class="method navigator-link" hash-for-method="subMenuTest">subMenuTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -164,82 +133,70 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">qaTestCases.GiftCardPageTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">qaTestCases.HomePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="cardPageTitleTest">
-                  </a> <!-- cardPageTitleTest -->
-                  <span class="method-name">cardPageTitleTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="chooseCardTest">
-                  </a> <!-- chooseCardTest -->
-                  <span class="method-name">chooseCardTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickNextTest">
-                  </a> <!-- clickNextTest -->
-                  <span class="method-name">clickNextTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickOnConfirmTest">
-                  </a> <!-- clickOnConfirmTest -->
-                  <span class="method-name">clickOnConfirmTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="fillCusFormTest(Jay, bzy@abd, 7469254136, 46, MG Road, 700083, Happy BirthDay)">
-                  </a> <!-- fillCusFormTest(Jay, bzy@abd, 7469254136, 46, MG Road, 700083, Happy BirthDay) -->
-                  <span class="method-name">fillCusFormTest</span>
-                  <span class="parameters">(Jay, bzy@abd, 7469254136, 46, MG Road, 700083, Happy BirthDay)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="fillRecFormTest(Liza, abc@zyz, 84614563)">
-                  </a> <!-- fillRecFormTest(Liza, abc@zyz, 84614563) -->
-                  <span class="method-name">fillRecFormTest</span>
-                  <span class="parameters">(Liza, abc@zyz, 84614563)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="giftCardIconTest">
-                  </a> <!-- giftCardIconTest -->
-                  <span class="method-name">giftCardIconTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="sendAmountTest">
-                  </a> <!-- sendAmountTest -->
-                  <span class="method-name">sendAmountTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="takeScreenshotTest">
-                  </a> <!-- takeScreenshotTest -->
-                  <span class="method-name">takeScreenshotTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="vaateHomepageTitleTest">
                   </a> <!-- vaateHomepageTitleTest -->
                   <span class="method-name">vaateHomepageTitleTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Up to 70% off on Online Furniture | Full House Sale - Uran Ladder] but found [Up to 70% off on Online Furniture | Full House Sale - Urban Ladder]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at qaTestCases.HomePageTest.vaateHomepageTitleTest(HomePageTest.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">qaTestCases.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="subMenuTest">
+                  </a> <!-- subMenuTest -->
+                  <span class="method-name">subMenuTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -247,7 +204,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\shrim\AppData\Local\Temp\testng-eclipse-280703867\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\shrim\AppData\Local\Temp\testng-eclipse-279639863\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -256,7 +213,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;qaTestCases.GiftCardPageTest&quot;/&gt;
+      &lt;class name=&quot;qaTestCases.HomePageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -296,52 +253,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(10);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'giftCardIconTest')
-data.setCell(0, 2, 'qaTestCases.GiftCardPageTest')
-data.setCell(0, 3, 2963);
+data.setCell(0, 1, 'subMenuTest')
+data.setCell(0, 2, 'qaTestCases.HomePageTest')
+data.setCell(0, 3, 1515);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'fillCusFormTest')
-data.setCell(1, 2, 'qaTestCases.GiftCardPageTest')
-data.setCell(1, 3, 568);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'takeScreenshotTest')
-data.setCell(2, 2, 'qaTestCases.GiftCardPageTest')
-data.setCell(2, 3, 377);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'fillRecFormTest')
-data.setCell(3, 2, 'qaTestCases.GiftCardPageTest')
-data.setCell(3, 3, 282);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'sendAmountTest')
-data.setCell(4, 2, 'qaTestCases.GiftCardPageTest')
-data.setCell(4, 3, 186);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'clickOnConfirmTest')
-data.setCell(5, 2, 'qaTestCases.GiftCardPageTest')
-data.setCell(5, 3, 118);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'chooseCardTest')
-data.setCell(6, 2, 'qaTestCases.GiftCardPageTest')
-data.setCell(6, 3, 116);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'clickNextTest')
-data.setCell(7, 2, 'qaTestCases.GiftCardPageTest')
-data.setCell(7, 3, 100);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'vaateHomepageTitleTest')
-data.setCell(8, 2, 'qaTestCases.GiftCardPageTest')
-data.setCell(8, 3, 58);
-data.setCell(9, 0, 9)
-data.setCell(9, 1, 'cardPageTitleTest')
-data.setCell(9, 2, 'qaTestCases.GiftCardPageTest')
-data.setCell(9, 3, 9);
+data.setCell(1, 1, 'vaateHomepageTitleTest')
+data.setCell(1, 2, 'qaTestCases.HomePageTest')
+data.setCell(1, 3, 30);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -367,54 +292,24 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">qaTestCases.GiftCardPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">qaTestCases.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">vaateHomepageTitleTest</span>
-                <span class="method-start">7562 ms</span>
+                <span class="method-start">7028 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">giftCardIconTest</span>
-                <span class="method-start">7624 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">cardPageTitleTest</span>
-                <span class="method-start">10589 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">chooseCardTest</span>
-                <span class="method-start">10599 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">sendAmountTest</span>
-                <span class="method-start">10718 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">clickNextTest</span>
-                <span class="method-start">10906 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">fillRecFormTest(Liza, abc@zyz, 84614563)</span>
-                <span class="method-start">11691 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">fillCusFormTest(Jay, bzy@abd, 7469254136, 46, MG Road, 700083, Happy BirthDay)</span>
-                <span class="method-start">12016 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">clickOnConfirmTest</span>
-                <span class="method-start">12586 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">takeScreenshotTest</span>
-                <span class="method-start">12707 ms</span>
+                <span class="method-name">subMenuTest</span>
+                <span class="method-start">7069 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">close</span>
-                <span class="method-start">13085 ms</span>
+                <span class="method-start">8586 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="qaTestCases.TestClass">
+      <class name="qaTestCases.HomePageTest">
         <methods>
-          <include name="setUp"/>
+          <include name="vaateHomepageTitleTest"/>
           <include name="close"/>
-          <include name="homeTest"/>
-          <include name="giftTest"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- qaTestCases.TestClass -->
+      </class> <!-- qaTestCases.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
